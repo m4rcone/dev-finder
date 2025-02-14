@@ -1,5 +1,17 @@
 import "../src/styles/global.css";
 import { sourceCodePro } from "../src/styles/fonts";
+import { Metadata } from "next";
+import type { Viewport } from "next";
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
+};
+
+export const metadata: Metadata = {
+  title: "devfinder",
+};
 
 export default function RootLayout({
   children,
